@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class Main_16174_윤경한 {
+public class Main_16174_강민주 {
 	static int N;
 	static int map[][];
 	static Queue<Pos> que;
