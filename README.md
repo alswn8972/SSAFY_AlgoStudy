@@ -81,9 +81,10 @@ pull했는데 해당 주차의 디렉터리가 안보이면 따로 만들어 주
 push할 때 conflict 생길 경우 pull 한번 해주고 다시 하면 됩니다.
 
 ### 파일 디렉토리에 옮긴 다음 add, 커밋메시지 작성하시고 commit and push하면 완료!
-
 ---
+ ##
  :apple: How to Contribute 2️⃣
+ 
 ```sh 
 $ git pull <remote 이름> master
 ```
