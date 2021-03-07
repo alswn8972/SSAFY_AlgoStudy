@@ -1,7 +1,8 @@
 import java.io.*;
 import java.util.*;
-public class Main_16174_윤경한 {
+public class Main_BOJ_16174 {
 	static int N;
+	//ㅇㅇㅇㅇ
 	static int map[][];
 	static Queue<Pos> que;
 	static int dir[][] = {{1,0},{0,1}};
