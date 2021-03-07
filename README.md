@@ -27,6 +27,53 @@
  
  ##### 2️⃣ push 하는 법
  ##
+ :apple: How to Contribute
+---
+1. 사용하고자 하는 워크스페이스의 프로젝트 익스플로러에서 import(왠만하면 스터디 문제 푸는 워크스페이스에서 하시길 권장합니다, 안그럼 옮길 때 귀찮아요~:open_mouth:) 
+ 
+![ex_screenshot](./img/use1.png)
+
+2. git 검색 projects from Git 클릭 후 Next
+
+![ex_screenshot](./img/use2.png)
+
+3. Clone URI 선택 후 Next
+
+![ex_screenshot](./img/use3.png)
+
+4. 스터디 깃허브 사이트에 Code 누른 후 URI 복사
+
+![ex_screenshot](./img/use4.png)
+
+5. 복사한 URI를 붙혀넣고 사용할 이메일과 비밀번호 기입 후 Next
+
+![ex_screenshot](./img/use5.png)
+
+6. main 체크 된 상태로 Next
+
+![ex_screenshot](./img/use6.png)
+
+7. 로컬 저장소 디렉토리 경로 설정 해주기(자동으로 생성됨) 
+
+![ex_screenshot](./img/use7.png)
+
+8. import existing Eclipse projects 해주면 프로젝트가 생성됩니다!
+
+![ex_screenshot](./img/use8.png)
+
+---
+
+매주 새 디렉터리를 만듭니다. (ex. 1주차, 2주차 ...)
+
+![ex_screenshot](./img/use9.png)
+
+디렉터리에 문제 디렉터리를 또 만듭니다. 
+
+![ex_screenshot](./img/use10.png)
+
+문제 디렉터리에 각자 푼 문제를 복사 후 붙혀넣기합니다.
+
+---
 ```sh 
 $ git pull <remote 이름> master
 ```
