@@ -20,12 +20,14 @@
 ##### 문제 디렉터리에 각자 푼 문제를 추가합니다.
 ##
 
- ##### 파일 생성 및 업로드 규칙
+##### 파일 생성 및 업로드 규칙
  N주차/디렉터리/.java파일로 해서 추가합니다.
  
  -ex) 8주차/bj_2876/Main_2876_이름
  
- ##### push 하는 법
+###
+# 🛑 push 하는 법
+ 
  ##
  :apple: How to Contribute  1️⃣
 ---
@@ -82,8 +84,9 @@ push할 때 conflict 생길 경우 pull 한번 해주고 다시 하면 됩니다
 
 ### 파일 디렉토리에 옮긴 다음 add, 커밋메시지 작성하시고 commit and push하면 완료!
 ---
- ##
- :apple: How to Contribute 2️⃣
+ 
+###
+## :apple: How to Contribute 2️⃣
  
 ```sh 
 $ git pull <remote 이름> master
