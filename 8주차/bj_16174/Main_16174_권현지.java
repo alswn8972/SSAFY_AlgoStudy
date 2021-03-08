@@ -24,8 +24,6 @@ public class Main {
     	dfs(0,0);
     	
     	System.out.println("Hing");
-    	
-    	
     }
     
     public static void dfs(int x, int y) {
@@ -46,8 +44,6 @@ public class Main {
     		visited[nx][ny] = true;
     		dfs(nx, ny);   		
     	}
-    	
     }
-
  
 }
