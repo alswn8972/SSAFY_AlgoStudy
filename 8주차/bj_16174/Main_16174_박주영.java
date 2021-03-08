@@ -6,6 +6,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main_16174_박주영 {
+
     static int n;
     static int[][] map = new int[65][65];
     static boolean[][] v = new boolean[65][65];
