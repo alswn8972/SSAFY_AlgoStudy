@@ -47,7 +47,6 @@ public class Main_16174_박주영 {
                     res = true;
                     break a;
                 }
-
                 q.offer(new int[]{ni,nj});
             }
         }
