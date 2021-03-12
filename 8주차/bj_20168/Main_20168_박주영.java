@@ -9,6 +9,7 @@ public class Main_20168_박주영 {
     static int n,m,a,b,c;
     static int map[][] = new int[11][11];
     static boolean visited[][];
+    static int min = Integer.MAX_VALUE;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -31,7 +32,6 @@ public class Main_20168_박주영 {
         System.out.println(res?min:-1);
     }
 
-    static int min = Integer.MAX_VALUE;
     private static boolean dfs(int cur, int sum, int max) {
         if(sum>c)return false;
         if(cur==b){
