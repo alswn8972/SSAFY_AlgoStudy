@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Main_16714_여정동 {
 	static int N;
 	static int[][] map;
 	static boolean[][] iv; 
@@ -53,5 +53,4 @@ public class Main {
 		else { bw.write("Hing"); };
 		bw.flush();
 	}
-
 }

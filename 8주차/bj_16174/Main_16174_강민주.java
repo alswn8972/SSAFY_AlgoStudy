@@ -1,66 +1,61 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
 public class Main_16174_강민주 {
 	static int N;
-	static int map[][];
-	static Queue<Pos> que;
-	static int dir[][] = {{1,0},{0,1}};
-	static boolean[][] check;
-	public static void main(String[] args)throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		StringTokenizer st;
-
-		que = new LinkedList<Pos>();
-
-		N = Integer.parseInt(br.readLine());
-		map = new int[N][N];
-		check = new boolean[N][N];
-		for (int i = 0; i < N; i++) {
-			st = new StringTokenizer(br.readLine());
-			for (int j = 0; j < N; j++) {
-				map[i][j] = Integer.parseInt(st.nextToken());
-			}
+	static int[][] board;
+	static boolean[][] v;
+	static int[] dx= {0, 1};
+	static int[] dy= {1, 0};
+	static Queue<Point> que;
+	static class Point{
+		int x,y,dis;
+		Point(int x, int y, int dis){
+			this.x=x;
+			this.y=y;
+			this.dis=dis;
 		}
-
-		que.add(new Pos(0,0));
-
-		boolean flag = false;
-		aaa:while(!que.isEmpty())
-		{
-			Pos cur = que.poll();
-
-			for (int i = 0; i < 2; i++) {
-				int nx = cur.x + map[cur.x][cur.y]*dir[i][0];
-				int ny = cur.y + map[cur.x][cur.y]*dir[i][1];
-
-
-				if(nx < 0 || ny < 0 || nx >= N || ny >=N) continue;
-				if(check[nx][ny]) continue;
-				
-				if(map[nx][ny] == -1)
-				{
-					flag =true; 
-					break aaa;
-				}
-				check[nx][ny] = true;
-				que.add(new Pos(nx,ny));
-			}
-		}
-
-		if(flag) System.out.println("HaruHaru");
-		else System.out.println("Hing");
-
 	}
-	static class Pos
-	{
-		int x,y;
-
-		public Pos(int x, int y) {
-			this.x = x;
-			this.y = y;
-			
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st;
+		que=new LinkedList<>();
+		N=Integer.parseInt(br.readLine());
+		board=new int[N][N];
+		v=new boolean[N][N];
+		
+		for(int i=0;i<N;i++) {
+			st=new StringTokenizer(br.readLine());
+			for(int j=0;j<N;j++) {
+				board[i][j]=Integer.parseInt(st.nextToken());
+				if(i==0&&j==0) {
+					v[i][j]=true;
+					que.add(new Point(i,j,board[i][j]));
+				} 
+			}
 		}
-
+		boolean check=false;
+		stop:while(!que.isEmpty()) {
+			Point po=que.poll();
+			for(int d=0;d<2;d++) {
+				int nx=po.x+dx[d]*po.dis;
+				int ny=po.y+dy[d]*po.dis;
+				if(nx<0||ny<0||nx>=N||ny>=N||v[nx][ny]) {
+					continue;
+				} 
+				if(board[nx][ny]==-1) {
+					check=true;
+					break stop;
+				} 
+				v[nx][ny]=true;
+				que.add(new Point(nx, ny, board[nx][ny]));
+			}
+		}
+		if(check==true) System.out.println("HaruHaru");
+		else System.out.println("Hing");
 	}
 }
