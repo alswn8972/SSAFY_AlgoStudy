@@ -1,6 +1,6 @@
 import java.io.*;
 import java.util.*;
-public class Main_BOJ_16174 {
+public class Main_16174_윤경한 {
 	static int N;
 	//ㅇㅇㅇㅇ
 	static int map[][];
