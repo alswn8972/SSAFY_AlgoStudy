@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Main {
+public class Main_16174_권현지 {
 	static int N;
 	static int [][] map;
 	static boolean[][] visited;
