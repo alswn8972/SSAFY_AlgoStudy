@@ -15,7 +15,7 @@ public class Main_여정동{
 	static int find(int i) {
 		if(na[i].k == i) return i;
 
-		return find(na[i].k);
+		return na[i].k = find(na[i].k);
 	}
 
 	public static void main(String[] args) throws IOException {
