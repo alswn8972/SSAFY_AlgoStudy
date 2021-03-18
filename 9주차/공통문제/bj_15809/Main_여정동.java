@@ -37,18 +37,9 @@ public class Main_여정동{
 			int Q_master = find(Q);
 			switch (o) {
 			case 1:
-				if(na[P_master].allys < na[Q_master].allys) {
-					na[P_master].allys += na[Q_master].allys;
-					na[Q_master].allys = 0;
-					na[P_master].army += na[Q_master].army;
-					na[Q_master].k = P_master;
-				}
-				else {
-					na[Q_master].allys += na[P_master].allys;
-					na[P_master].allys = 0;
-					na[Q_master].army += na[P_master].army;
-					na[P_master].k = Q_master;
-				}
+				na[Q_master].army += na[P_master].army;
+				na[P_master].k = Q_master;
+
 				break;
 
 			case 2:
@@ -69,7 +60,7 @@ public class Main_여정동{
 				break;
 			}
 		}
-		
+
 		ArrayList<Integer> le = new ArrayList<Integer>();
 		for(int i = 1; i <= N; i++) {
 			if(na[i].k == i) {
@@ -77,19 +68,18 @@ public class Main_여정동{
 			}
 		}
 		Collections.sort(le);
-		
+
 		bw.write(le.size()+"\n");
 		for(int i = 0 ; i < le.size(); i++) {
 			bw.write(le.get(i)+" ");
 		}
-		
+
 		bw.flush();
 	}
 }
 class Nation{
 	int k;
 	int army;
-	int allys = 0;
 	Nation(int k, int army){
 		this.k = k;
 		this.army = army;
