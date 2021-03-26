@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-public class BOJ_1726 {
+public class Main_박주영 {
     static class Pos implements Comparable<Pos>{
         int x,y;
         int dir;
