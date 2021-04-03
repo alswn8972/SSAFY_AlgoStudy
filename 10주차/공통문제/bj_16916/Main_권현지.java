@@ -2,7 +2,6 @@ import java.util.*;
 import java.io.*;
 import java.math.BigInteger;
 
-
 public class Main_권현지 {
     public static void main(String[] args) throws NumberFormatException, IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
