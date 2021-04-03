@@ -40,7 +40,6 @@ public class Main_강민주 {
 			}
 		}
 
-		//플로이드 와샬 알고리즘이 그래서 뭔디 ..ㅡㅡ
 		for (int k = 1; k <= n; k++) {
 			for (int i = 1; i <= n; i++) {
 				for (int j = 1; j <= n; j++) {
