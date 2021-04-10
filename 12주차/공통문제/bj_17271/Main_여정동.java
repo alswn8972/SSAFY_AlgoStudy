@@ -20,8 +20,7 @@ public class Main_여정동 {
 		dp[M] = 2;
 		
 		for(int i = M+1; i <= N; i++) {
-			if(i-M > 0) dp[i] = (dp[i-1] + dp[i-M])%1000000007;
-			else dp[i] = dp[i-1];
+			dp[i] = (dp[i-1] + dp[i-M])%1000000007;
 		}
 		
 		System.out.println(dp[N]);
