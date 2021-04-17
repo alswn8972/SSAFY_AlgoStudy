@@ -6,7 +6,7 @@ import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Main {
+public class Main_여정동 {
 	static int n;
 	static boolean[] prime;
 	static Map<Integer, Boolean> map = new HashMap<Integer, Boolean>();
