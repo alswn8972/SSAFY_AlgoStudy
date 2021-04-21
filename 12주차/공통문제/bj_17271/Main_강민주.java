@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Main_17271 {
+public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st=new StringTokenizer(br.readLine());
@@ -14,13 +14,11 @@ public class Main_17271 {
 		int N=Integer.parseInt(st.nextToken());
 		int M=Integer.parseInt(st.nextToken());
 		
-		int[] arr=new int[N+1];
+		int[] arr=new int[10001];
 		arr[0]=1;
-		arr[1]=1;
-		for(int i=2;i<=N;i++) {
+		for(int i=1;i<=N;i++) {
 			arr[i]=arr[i-1];
-			if(i-M>=0) arr[i]=(arr[i-1]+arr[i-M])%10000007;
-			
+			if(i-M>=0) arr[i]=(arr[i]+arr[i-M])%1000000007;
 		}
 		bw.write(arr[N]+"");
 		bw.flush();
