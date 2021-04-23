@@ -14,7 +14,6 @@ public class Main_여정동 {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int count = 0;
-		int zc = 0;
 		N = Integer.parseInt(br.readLine());
 		arr = new long[N];
 		StringTokenizer st = new StringTokenizer(br.readLine());
