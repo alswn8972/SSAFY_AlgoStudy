@@ -9,6 +9,8 @@
       <sourceFolder url="file://$MODULE_DIR$/8주차/bj_1756" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/8주차/bj_20168" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/8주차/bj_13904" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/tmp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/5월3주차모각코/박주영" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="zulu-8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
