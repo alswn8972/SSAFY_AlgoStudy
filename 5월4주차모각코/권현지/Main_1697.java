@@ -18,6 +18,7 @@ public class Main_1697 {
 		boolean D[] = new boolean[200000];
 
 		
+		
 		Queue<Integer> que = new LinkedList<>();
 		Queue<Integer> time = new LinkedList<>();
 		
