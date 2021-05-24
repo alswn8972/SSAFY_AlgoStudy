@@ -33,6 +33,7 @@ public class Main_µ¿Àü2 {
 		else
 			System.out.println(D[K]);
 		
+		
 	}
 	
 
