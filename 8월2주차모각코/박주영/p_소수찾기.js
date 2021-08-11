@@ -20,12 +20,6 @@ rl.on("line", function (line) {
     process.exit(); 
 });
 
-function solution(numbers) {
-    const arr = numbers.split('');
-    let selected = 0;
-    makePowerSet(arr, 0, selected);
-    return cnt;
-}
 function solution(numbers) { 
     var answer = 0; 
     // numbers를 배열로 변환하고 내림차순으로 정렬 
@@ -38,7 +32,7 @@ function solution(numbers) {
     for(let i=2; i<=N; i++){ 
         // 소수가 아니면 패스 
         if(arr[i] == false) continue; 
-        
+
         // 소수면 해당 숫자를 문자열로 바꾸고 배열로 변환 
         let temp = i.toString().split(''); 
         // numbers에 해당 하는 값을 돌면서 temp에도 있으면 temp에서 삭제 
@@ -65,6 +59,12 @@ function makePrimeNum(N){
 }
 
 
+// function solution(numbers) {
+//     const arr = numbers.split('');
+//     let selected = 0;
+//     makePowerSet(arr, 0, selected);
+//     return cnt;
+// }
 // let primes = new Set([]);
 // let cnt = 0;
 // function makePowerSet(arr, cnt, selected){
