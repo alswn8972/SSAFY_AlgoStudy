@@ -30,7 +30,7 @@ class Iterator {
         //contain binary gap
         for(int i = 0; i<indexs.size() - 1; i++){
             int tmp = Math.abs(indexs.get(i)-indexs.get(i+1)) - 1;
-            res = Math.max(res, tmp);
+            res=Math.max(res, tmp);
         }
 
         return res;
